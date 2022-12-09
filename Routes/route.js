@@ -5,7 +5,7 @@ const {insertAddress} = require('../Controller/addressController')
 
 //-------------For Customer------------------//
 router.get('/selectCustomers', getCustomerList)
-router.post('/', getCustomer)
+router.post('/selectCustomerById', getCustomer)
 router.post('/insertCustomer', insertCustomer)
 router.post('/updateCustomer', updateCustomer)
 router.post('/deleteCustomer', deleteCustomer)

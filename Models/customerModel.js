@@ -12,7 +12,7 @@ const customerSchema = mongoose.Schema({
     userName: {
         type: String,  //Email validation
         //required: true,
-        unique: true
+        //unique: true
     },
     email : {
         type : String,
