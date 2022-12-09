@@ -1,26 +1,39 @@
-import React ,{useEffect,useState} from "react"
+import React, { useEffect, useState } from "react";
+import './CustomerList.css';
 
-const CustomerList = () =>{
+
+const CustomerList = () => {
     let url = 'http://localhost:5000/selectCustomers'
     const [customerList, setCustomerList] = useState([])
-    const getCustomer = async () =>{
+    const getCustomer = async () => {
         let result = await fetch(url, {
-            method : 'GET'
+            method: 'GET'
         })
         result = await result.json()
         setCustomerList(result.data)
         console.log(result)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         getCustomer()
-    },[])
+    }, [])
 
     return (
-        <div>
+        <div >
             <h1>Customer List Component</h1>
-            {customerList.map((data)=>
-            <h1>{data.firstName}</h1>)}
+            <div className="List">
+                <ul>
+                    <li>Name</li>
+                    <li>Email</li>
+                </ul>
+                {customerList.map((data) =>
+                    <ul>
+                        <li>{data.firstName + data.lastName}</li>
+                        <li>{data.email}</li>
+                    </ul>
+                )}
+            </div>
+
         </div>
     )
 }

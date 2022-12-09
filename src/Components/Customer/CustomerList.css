@@ -1,0 +1,14 @@
+.List{
+    border:5px solid black;
+    margin : auto;
+    height: 100%;
+    width : 700px;
+}
+
+
+.List ul li{
+    display: inline-block;
+    border: 3px Solid black;
+    height: 30px;
+    width : 200px;
+}

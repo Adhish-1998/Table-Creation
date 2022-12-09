@@ -5,7 +5,6 @@ import Customer from './Components/Customer/Customer'
 import InsertCustomer from './Components/Customer/InsertCustomer';
 import UpdateCustomer from './Components/Customer/UpdateCustomer';
 import DeleteCustomer from './Components/Customer/DeleteCustomer';
-import InsertAddress from './Components/Address/InsertAddress';
 import NavBar from './Components/NavBar/NavBar'
 
 
