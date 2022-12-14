@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 
 const Customer = () =>{
-    let url = 'http://localhost:5000/selectCustomerById'
+    let url = 'https://table-creation-production.up.railway.app/selectCustomerById'
     const [id, setId] = useState('')
     const [customer, setCustomer] = useState(null)
 

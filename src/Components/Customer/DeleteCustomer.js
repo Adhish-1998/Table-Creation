@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 const DeleteCustomer = () =>{
-    let url = 'http://localhost:5000/deleteCustomer'
+    let url = 'https://table-creation-production.up.railway.app/deleteCustomer'
     const [id, setId] = useState('')
 
     const getCustomer = async() =>{

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const InsertAddress = () => {
-    let url = 'http://localhost:5000/insertAddress'
+    let url = 'https://table-creation-production.up.railway.app/insertAddress'
     const [customerId, setCustomerId] = useState('')
     const [address, setAddress] = useState('')
     const [landmark, setLandmark] = useState('')

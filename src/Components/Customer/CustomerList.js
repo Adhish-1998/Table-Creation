@@ -3,7 +3,7 @@ import './CustomerList.css';
 
 
 const CustomerList = () => {
-    let url = 'http://localhost:5000/selectCustomers'
+    let url = 'https://table-creation-production.up.railway.app/selectCustomers'
     const [customerList, setCustomerList] = useState([])
     const getCustomer = async () => {
         let result = await fetch(url, {

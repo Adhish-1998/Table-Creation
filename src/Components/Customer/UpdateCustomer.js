@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { json } from 'react-router-dom'
 
 const UpdateCustomer = () => {
-    let url = 'http://localhost:5000/updateCustomer'
+    let url = 'https://table-creation-production.up.railway.app/updateCustomer'
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [dob, setDob] = useState('')

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import './InsertCustomer.css'
 
 const InsertCustomer = () => {
-    let host = 'http://localhost:5000/insertCustomer'
+    let host = 'https://table-creation-production.up.railway.app/insertCustomer'
 
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
