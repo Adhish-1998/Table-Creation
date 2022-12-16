@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './InsertCustomer.css'
 
 const InsertCustomer = () => {
@@ -14,6 +14,8 @@ const InsertCustomer = () => {
     const [gender, setGender] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
+    
+    const navigate = useNavigate()
 
     const handleClick = async (event) => {
         console.log(firstName)
@@ -25,6 +27,10 @@ const InsertCustomer = () => {
         })
         result = await result.json()
         console.log(result)
+    }
+
+    const navigateToInsertAddress = () =>{
+        navigate('/insertAddress')
     }
 
     return (
@@ -43,7 +49,7 @@ const InsertCustomer = () => {
                     <label>Password <input type='password' placeholder="Enter Password" value={password} onChange={(event) => setPassword(event.target.value)}></input></label>
                     <label>Confirm Password <input type='password' placeholder="Enter Confirm Password" value={confirmPassword} onChange={(event) => setConfirmPassword(event.target.value)}></input></label>
                     <button className='Button' onClick={handleClick}>Submit</button>
-                    <NavLink to='/insertAddress' ><button className='Button'>Add Address</button></ NavLink>
+                    <button className='Button' onClick={navigateToInsertAddress}>Add Address</button>
                 </form>
                 
             </div>

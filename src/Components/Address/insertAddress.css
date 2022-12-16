@@ -1,0 +1,13 @@
+.Form{
+    border: 2px solid black;
+    width: 400px;
+    margin : auto;
+    display: block;
+}
+
+.Form input{
+    text-align: center;
+    position: relative;
+    margin : 10px ;
+      
+}

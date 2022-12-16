@@ -5,6 +5,7 @@ import Customer from './Components/Customer/Customer'
 import InsertCustomer from './Components/Customer/InsertCustomer';
 import UpdateCustomer from './Components/Customer/UpdateCustomer';
 import DeleteCustomer from './Components/Customer/DeleteCustomer';
+import InsertAddress from './Components/Address/InsertAddress';
 import NavBar from './Components/NavBar/NavBar'
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route path='/insertCustomer' element={<InsertCustomer />} /> 
             <Route path='/updateCustomer' element={<UpdateCustomer />} /> 
             <Route path='/deleteCustomer' element={<DeleteCustomer />} />
+            <Route path='/insertAddress' element={<InsertAddress />} />
         </Routes>
       </BrowserRouter>
     </div>

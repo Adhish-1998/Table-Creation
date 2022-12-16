@@ -23,7 +23,7 @@ const InsertAddress = () => {
     return (
         <div>
             <h1>Insert Address Component</h1>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={(e) => e.preventDefault()} className = 'Form'>
                 <label>Customer ID <input type='text' placeholder="Enter Customer ID " value={customerId} onChange={(e) => { setCustomerId(e.target.value) }}></input></label>
                 <label>Address <input type='text' placeholder="Enter Address" value={address} onChange={(e) => { setAddress(e.target.value) }}></input></label>
                 <label>Landmark <input type='text' placeholder="Enter Landmark" value={landmark} onChange={(e) => { setLandmark(e.target.value) }}></input></label>
